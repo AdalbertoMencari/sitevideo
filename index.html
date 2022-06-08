@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video</title>
+
+    <style>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700;800&family=Itim&display=swap');
+
+
+
+
+body,html{
+  
+margin: 0;
+padding: 0;
+max-width: 100vw;
+max-height: 100vh;
+
+
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+
+
+.videozin{
+position: absolute;
+width: 100%;
+height: 100%;
+
+
+
+}
+
+.videozin video{
+
+    position:fixed;
+padding: 0%;
+     top:0;
+     left: 0;
+     object-fit: cover;
+     width: 100%;
+     height: 100%;
+  
+}
+
+
+
+
+
+.card{
+padding: 100px;
+width:550px;
+box-shadow: 0 0 5px 0px white;
+transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+
+
+
+
+position:absolute;
+ 
+  backdrop-filter:blur(2px) saturate(180%);
+  
+
+}
+
+.card:after{
+
+border-top:1px solid black; 
+border-bottom: 1px solid black;
+transform: scalex(0);
+}
+
+.card:after,.card:before{
+content: "";
+position:absolute;
+bottom: 0;
+top:0;
+left: 0;
+right: 0;
+ 
+transition:transform .3s ease-in-out;
+cursor:pointer;
+}
+
+
+
+
+.card:before{
+border-left: 1px solid black;
+border-right: 1px solid black;
+transform: scaleY(0);
+
+
+}
+
+.card:hover:before{
+transform: scaleY(1);
+
+}
+
+
+
+.card:hover:after{
+transform: scalex(1);
+
+}
+
+
+
+
+
+
+.tudo{
+    position:absolute;
+display: block;
+
+font-size: clamp(2.5em , 1em + 3vw, 3.5em);
+color: aliceblue;
+font-family:'Arima Madurai',cursive;
+
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+
+
+}
+
+h1{
+    position: absolute;
+    display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+top: 50%;
+left: 0;
+right: 0;
+bottom: 50%;
+margin: auto;
+
+    
+}
+
+
+
+   
+  .menu {
+      
+      
+      
+      display: flex;
+      flex-direction: row;
+      position:absolute;
+      top: 30px;
+      right: 7%;
+      max-width: 50%;
+      
+      
+        
+        
+    }
+
+  
+    a{
+
+     
+        margin-right: 10px;
+        
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+        margin-bottom:880px;
+        font-family: 'Itim', cursive;
+        font-weight:500;
+        font-size: clamp(1.5em , 1em + 2vw, 2.5em);
+        
+       
+        
+        
+       
+    }
+
+
+
+
+   a:hover{
+
+    text-decoration: underline white;
+    
+
+
+   }
+
+
+
+
+
+
+
+   img:hover{
+
+    
+    filter: brightness(200%) blur(1px) contrast(100%) saturate(135%) drop-shadow(5px 10px 4px rgba(0, 0, 0, 0.781)  ) ;
+   
+
+
+    
+
+
+   }
+
+
+
+   @media only screen  and (max-width:1440px) {
+
+
+
+
+  
+
+
+
+
+div.box{
+
+object-fit: contain;
+width:5%;
+height:5% ;
+}
+}
+
+
+
+@media only screen  and (max-width:850px) {
+
+
+
+
+  
+
+
+    .card{
+
+
+        max-width: 350px;
+    }
+
+  div.box{
+display: inline-block;
+    object-fit: contain;
+    width:10%;
+    height:10% ;
+    margin:-5px;
+  }
+  img{
+height: 75px;
+}
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width:588px) {
+
+.card>h1{
+
+font-size: 65px;
+}
+
+.card{
+    padding: 70px;
+
+    width:250px;
+
+}
+
+div.box{
+
+object-fit: contain;
+width:10%;
+height:3% ;
+}
+
+}
+
+
+ 
+div.box {
+
+
+
+	width: 60px;
+	max-width: 125px;
+    
+	
+   
+    position: relative;
+    top: 63%;
+    left: 50%;
+    
+    display: inline-block; 
+margin-top: 2px;
+
+
+}
+
+
+img{
+position: relative;
+    display:inline-block;
+    
+
+    transform: translate(-60%,10%);
+    top: 63%;
+   
+    
+   
+
+   
+}
+
+
+
+
+
+    </style>
+
+
+
+</head>
+
+
+
+
+<body>
+
+    
+
+
+
+    <div class="videozin">
+        <video autoplay muted loop>
+        <source src="pexels-arvin-latifi-6466763 (online-video-cutter.com).mp4"  type="video/mp4">
+
+
+        
+    </video>
+
+    <div class="menu">
+        <a href="pag2.html">contato</a>
+        <a href="#">sobre</a>
+        <a href="#">link</a>
+        <a href="#">link</a></div>
+    
+    
+
+        
+
+
+    </div>
+
+   
+    
+    
+    
+
+
+    <div class="tudo">
+         
+        
+        
+ 
+
+       
+        
+        
+    <div class="card"><h1>Bem vindo</h1></div>
+</div>
+
+       
+    </div>
+   
+   
+
+        
+        
+       
+    
+
+</div>
+
+
+
+
+
+<div class="box">
+    <a href="#"><img  src="faceinsta (1).png"/></a>
+   
+</div>
+<div class="box">
+    <a href="#"><img  src="Novo Projeto (1).png"/></a>
+ 
+
+</div>
+
+
+
+
+</body>
+</html>
